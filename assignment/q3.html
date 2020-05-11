@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-3</title>
+    <style>
+        table,tr,td,th{
+            padding:1px;
+            border: 1px solid black;
+        }
+    </style>
+    <script src="q3.js"></script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 id="question">Question-3</h1>
+        <table style="margin: auto;" id="table">
+        <tr>
+            <th>S.No.</th>
+            <th>Name</th>
+            <th>DOB</th>
+            <th>Edit/Delete</th>
+        </tr>
+        <tr id="row1">
+            <td class="SNo" id="Sno1">1</td>
+            <td class="name" id="name1">Abcdef</td>
+            <td class="DOB" id="dob1">12/06/2000</td>
+            <td class="EDDE"><button class="edit1" value="1" onclick="edit(this.value)">Edit</button><button class="delete1" value="1" onclick="del(this.value)">Delete</button></td>
+        </tr>
+        <tr id="row2">
+            <td class="SNo" id="Sno2">2</td>
+            <td class="name" id="name2">Ghijkl</td>
+            <td class="DOB" id="dob2">02/10/1996</td>
+            <td class="EDDE"><button class="edit2" value="2" onclick="edit(this.value)">Edit</button><button class="delete2" value="2" onclick="del(this.value)">Delete</button></td>
+        </tr>
+        </table>
+        <br>
+        <button value="submit" onclick="add()">Add</button>
+        <h3 id="history"></h3>
+        <h4 id="answer"></h4>
+    </div>
+</body>
+</html>

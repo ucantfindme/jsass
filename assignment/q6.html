@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-6</title>
+    <script src="q6.js"></script>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1 id="question">Question-6</h1>
+        <form action="#">
+            <h2>Student Registration Form</h2>
+            <table style="margin: auto;">
+                <tr>
+                    <td style="text-align: right;"><label for="Name">Name of the Student:</label></td>
+                    <td style="text-align: left;"><input type="text" name="Name" id="Name" required><span style="display: none;" id="nam">*only alphabets</span><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="phone">Mobile Number:</label></td>
+                    <td style="text-align: left;"><input type="number" name="phone" id="phone" required><span style="display: none;" id="ph">*enter 10digit number</span></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="address">Address:</label></td>
+                    <td style="text-align: left;"><input type="text" name="address" id="address" required><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="city">City:</label></td>
+                    <td style="text-align: left;"><input type="text" name="city" id="city" required><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="State">State:</label></td>
+                    <td style="text-align: left;"><input type="text" name="state" id="state" required><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="pin">Pincode:</label></td>
+                    <td style="text-align: left;"><input type="number" name="pincode" id="pincode" required><span style="display: none;" id="pin">*enter 6digit pincode</span><br></td>
+                </tr>
+            </table>
+            <button id="check" type="button" onclick="func()">Check</button><br><br>
+            <button type="submit" id="submit" disabled onclick="func2()">Submit</button>
+            <button type="reset">Reset</button><br>
+        </form>
+    </div>
+</body>
+</html>

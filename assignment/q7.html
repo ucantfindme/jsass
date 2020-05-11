@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-7</title>
+    <script src="q7.js"></script>
+    <style>
+        ul {
+      display: table;
+      margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body onLoad="focusOnMyInputBox();">
+    <div style="text-align: center;">
+        <h1 id="question">Question-7</h1>
+        <form action="#">
+            <h2>Student Registration Form</h2>
+            <table style="margin: auto;">
+                <tr>
+                    <td style="text-align: right;"><label for="Name">Name of the Student:</label></td>
+                    <td style="text-align: left;"><input type="text" name="Name" id="Name" required autofocus><span style="display: none;" id="nam">*only alphabets</span><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="phone">Mobile Number:</label></td>
+                    <td style="text-align: left;"><input type="number" name="phone" id="phone" required><span style="display: none;" id="ph">*enter 10digit number</span></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="address">Address:</label></td>
+                    <td style="text-align: left;"><input type="text" name="address" id="address" required><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="city">City:</label></td>
+                    <td style="text-align: left;"><input type="text" name="city" id="city" class="city1" oninput="pinfunc()" required><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="State">State:</label></td>
+                    <td style="text-align: left;"><input type="text" name="state" id="state" required><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="pin">Pincode:</label></td>
+                    <td style="text-align: left;"><input type="number" name="pincode" id="pincode" required><span style="display: none;" id="pin">*enter 6digit pincode</span><br></td>
+                </tr>
+            </table>
+            <button id="check" type="button" onclick="func()">Check</button><br><br>
+            <button type="submit" id="submit" disabled onclick="func2()">Submit</button>
+            <button type="reset">Reset</button><br>
+        </form>
+            <h1>DOM Tree</h1>
+            <img src="347uilab6.jpeg" alt="DOM of question6" style="height: 300px;width: 600px;border: 3px solid black;">
+            <h3>Different ways Accessing City Field:</h3>
+            <ul>
+                <a href="javascript:run(1);"><li>document.getElementById("city").value</li></a>
+                <a href="javascript:run(2);"><li>document.getElementsByClassName("city1")[0].value</li></a>
+                <a href="javascript:run(3);"><li>document.getElementsByTagName("input")[3].value</li></a>
+                <a href="javascript:run(4);"><li>document.querySelector("#city").value</li></a>
+                <a href="javascript:run(5);"><li>document.querySelector(".city1").value</li></a>
+                <a href="javascript:run(6);"><li>document.querySelectorAll("input")[3].value</li></a>
+            </ul>
+            <h3>Cities and Respective pincodes</h3>
+            <ul>
+                <li>Vizag : 530026</li>
+                <li>Amritapuri : 690546</li>
+                <li>Bangalore : 560021</li>
+                <li>Chennai/Madras : 600029</li>
+                <li>Hyderabad : 500054</li>
+            </ul>
+    </div>
+</body>
+</html>
