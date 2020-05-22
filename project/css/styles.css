@@ -1,0 +1,209 @@
+body { 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.jumbotron,body{
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 5s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    font-family: 'Patrick Hand', cursive;
+}
+
+.icons{
+    display: inline;
+    padding: 5px;
+}
+i{
+    padding: 5px;
+}
+.name{
+    float: right;
+    color: rgb(196, 194, 191);
+    opacity: 0.5;
+}
+.name h1{
+    font-size: 2em;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 10px;
+}
+.header {
+    font-size: large;
+    font-weight: 600;
+}
+.header li{
+    padding-left: 15px;
+}
+.container-fluid{
+    padding: 0px;
+}
+.header,.footer{
+    margin: 0px;
+}
+.img-circle{
+    width: 50%;
+    height: 50%;
+}
+.login-img{
+    height: 100px;
+    width: 100px;
+}
+.login-block5{
+    background: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 50px;
+    margin: 50px;
+    width :400px;
+}
+.form-control{
+    width: 200px;
+    float: right;
+    display: block;
+}
+#login{
+    color: white;
+}
+.form-group5{
+    width: 400px;
+    margin: 15px auto;
+    vertical-align: middle;
+}
+.matter{
+    background: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+nav{
+    padding: 5px 50px 5px 50px;
+}
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: 800;
+}
+.imgdiv{
+    float: right;
+    width: 40%;
+    height: 80vh;
+}
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+}
+.crewmat{
+    height: fit-content;
+    vertical-align: middle;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 50px;
+    margin: 50px;
+    width :40%;
+}
+.hidinfo{
+    display: none;
+}
+
+@media(min-width: 992px){
+.crewtable tr td{
+    width: 10%;
+    text-align: center;
+}
+.crewtable tr{
+    width: fit-content;
+    height: 17.4vh;
+    margin:auto;
+}
+}
+@media(max-width: 991px) and (min-width: 442px){
+    .crewtable tr td{
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+    }
+    .crewtable tr{
+        width: fit-content;
+        height: 17.4vh;
+        margin: auto;
+    }
+}
+@media(max-width: 441px){
+    .crewtable tr td{
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+    }
+    .crewtable tr{
+        width: fit-content;
+        height: 17.4vh;
+        margin: auto;
+    
+    }
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  .container {
+    position: relative;
+  }
+
+  .mySlides {
+    display: none;
+    background: rgba(0,0,0,0.5);
+    border-radius: 25px;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 16.66%;
+    height: 300px;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
